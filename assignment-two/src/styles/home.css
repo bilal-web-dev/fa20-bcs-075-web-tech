@@ -1,0 +1,274 @@
+#banner {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-bg {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-image: url("../assets/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+}
+
+.banner-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-title > h1 {
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 150px; /* Adjust the font size as needed */
+  color: #fff; /* Text color (white) */
+  text-shadow: -4px 4px 0px #1ffd6a;
+}
+
+.banner-title p {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.banner-title a {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.top-rated {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top-rated-title {
+  margin-top: 150px;
+}
+
+.top-rated-title img {
+  margin-top: 20px;
+}
+
+.top-rated-title > h1 {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.top-rated-title p {
+  margin-top: 12px;
+  font-size: 20px;
+  color: #1ffd6a;
+}
+
+.top-rated-bg {
+  position: absolute;
+  top: 0px;
+  background-image: url("../assets/bg2.png");
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -9;
+}
+
+.top-rated-games {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.game-one {
+  position: relative;
+  background-image: url("../assets/game1.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 25%;
+  height: 100%;
+  border-radius: 5px;
+  border: 3px solid rgba(124, 123, 123, 0.672);
+
+  &:hover {
+    border-color: #1ffd6a;
+  }
+}
+.game-one::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #1ffd6a 0%, transparent 100%);
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s; /* Add a smooth transition effect */
+}
+
+.game-one:hover::before {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.game-two {
+  position: relative;
+  background-image: url("../assets/game2.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 25%;
+  height: 100%;
+  border-radius: 5px;
+  border: 3px solid rgba(124, 123, 123, 0.672);
+
+  &:hover {
+    border-color: #1ffd6a;
+  }
+}
+.game-two::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #1ffd6a 0%, transparent 100%);
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s; /* Add a smooth transition effect */
+}
+
+.game-two:hover::before {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.game-three {
+  position: relative;
+  background-image: url("../assets/game3.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 25%;
+  height: 100%;
+  border-radius: 5px;
+  border: 3px solid rgba(124, 123, 123, 0.672);
+
+  &:hover {
+    border-color: #1ffd6a;
+  }
+}
+.game-three::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #1ffd6a 0%, transparent 100%);
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s; /* Add a smooth transition effect */
+}
+
+.game-three:hover::before {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.matches {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.matches-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -9;
+
+  background-image: url("../assets/match_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.matches-img {
+  background-image: url("../assets/results.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 100%;
+}
+
+.contact {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.contact-title {
+}
+
+.contact-icons {
+  display: flex;
+
+  width: 65%;
+  height: 50%;
+  border: 2px solid white;
+  justify-content: space-evenly;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  height: 160px;
+  border: 3px solid white;
+  position: relative;
+}
+
+
+.social {
+  color: white;
+
+  &:hover {
+    color: #1ffd6a !important;
+  }
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #1ffd6a 0%, transparent 100%);
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s; /* Add a smooth transition effect */
+}
+
+.icon:hover::before {
+  opacity: 1; /* Show the overlay on hover */
+}

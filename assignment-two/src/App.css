@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@300;500;700&family=Russo+One&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+/** For Browsers Like Chrome and Safari  */
+/* Hide the default scroll bar */
+::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scroll bar */
+  
+}
+
+/* Customize the track (background) of the scroll bar */
+::-webkit-scrollbar-track {
+  background-color: #0a0909; /* Set the background color of the track */
+}
+
+/* Customize the thumb (the draggable part) of the scroll bar */
+::-webkit-scrollbar-thumb {
+  background-color: #1FFD6A; /* Set the color of the thumb */
+  border-radius: 3px; /* Round the corners of the thumb */
+}
+
+/* Optionally, you can customize the hover state of the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1FFD6A; /* Set the color on hover */
+}
+
+/** for Browsers like firefox */
+
+/* Customize the scroll bar for Firefox */
+/* Note: Firefox uses its own pseudo-elements for scroll bar styling */
+
+/* Track (background) */
+/* For Firefox, use -moz prefix */
+scrollbar {
+  width: 6px;
+}
+
+scrollbar-track {
+  background-color: #0a0909;
+}
+
+/* Thumb (draggable part) */
+/* For Firefox, use -moz prefix */
+scrollbar-thumb {
+  background-color: #1FFD6A;
+  border-radius: 3px;
+}
+
+/* Optionally, you can customize the hover state of the thumb */
+/* For Firefox, use -moz prefix */
+scrollbar-thumb:hover {
+  background-color: #1FFD6A;
+}

@@ -1,0 +1,39 @@
+.header {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo > img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.navbar {
+    position: relative;
+  padding: 20px;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  right: 180px;
+}
+
+.navbar span{
+    font-weight: 700;
+    font-size: 15px;
+   
+    &:hover{
+        color: #1FFD6A;
+    }
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
